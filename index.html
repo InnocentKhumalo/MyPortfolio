@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>   
+</head>
+<body>
+    <header>
+        <h1>My Portfolio <i class="fa fa-bars" onclick="showMenuBar()" id="fa-bars"></i> <i class="fa fa-close" id="fa-close" onclick="closeMenu()"></i></h1>
+        <div id="menu">
+            <ul id="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#MyWork">Projects</a></li>
+                <li><a href="#contact-background">Contact Me</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li onclick="openResume()">Resume</li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#MyWork">Projects</a></li>
+                <li><a href="#contact-background">Contact Me</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+                <li onclick="openResume()">Resume</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <article>
+            <h2>Khumalo <span>Morena</span> Innocent</h2>
+            <figure id="figure-details">
+                <h3>I am an upcoming Web/Software Developer</h3>
+            </figure>
+            <aside id="image-container">
+                <img src="images/Morena.jpg" alt="MyPicture">
+            </aside>
+            <p id="intro">
+                I'm a versatile developer with expertise in crafting dyanmic websites and robust software solutions.
+                my skillset spans across web development technologies like PHP, MySQL, JavaScript, CSS, React and HTML,
+                allowing me to build scalable and efficient web applications. Additionally, I have proficiency in 
+                Java and Android development, enabling me to create innovative mobile apps for Android platforms.
+            </p>
+            <div id="icons">
+               <div id="top-icons">
+                <div id="actual-icons">
+                    <i class="fab fa-php"></i>
+                    <div><span>PHP</span></div>
+                </div>
+                <div id="actual-icons">
+                    <i class="fa fa-database"></i>
+                    <div><span>MySQL</span></div>
+                </div>
+                <div id="actual-icons">
+                    <i class="fab fa-js"></i>
+                    <div><span>JavaScript</span></div>
+                </div>
+               </div>
+                <div id="bottom-icons">
+                    <div id="actual-icons">
+                        <i class="fab fa-css3-alt"></i>
+                        <div><span>CSS</span></div>
+                    </div>
+                    <div id="actual-icons">
+                        <i class="fab fa-html5"></i>
+                        <div><span>HTML</span></div>
+                    </div>
+                    <div id="actual-icons">
+                        <i class="fas fa-coffee"></i>
+                        <div><span>JAVA</span></div>
+                    </div>
+                    <div id="actual-icons">
+                        <i class="fab fa-react"></i>
+                        <div><span>React</span></div>
+                    </div>
+                </div>
+            </div>
+            <div id="buttons">
+                <button onclick="openRecruitment()">Recruit</button>
+                <button onclick="openResume()">Resume</button>
+            </div>
+        </article>
+    </main>
+    <form id="recruitment-form" action="https://formspree.io/f/xvgpgrbq" method="POST">
+    <div id="recruitment-popup">
+        <i class="fa fa-times" onclick="closeRecruitment()"></i>
+        <h1>Job Requisition</h1>
+        <label for="title">Position Title</label>
+        <input type="text" name="title" id="title">
+        <label for="Department">Department</label>
+        <input type="text" name="Department" id="department">
+        
+            <label for="Surname">Full Names</label>
+            <div id="names-section">
+            <input type="text" name="surname" id="surname" placeholder="First Name">
+            <input type="text" name="names" id="names" placeholder="Last Name">
+            </div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="emails">
+            <label for="Employment">Type of Employment</label>
+            <select name="Employment" id="Employment">
+                <option value="none">--Please Select--</option>
+                <option value="Trainee">Trainee</option>
+                <option value="Temporary">Temporary</option>
+                <option value="Part-time">Part-time</option>
+                <option value="Contract Based">Contract Based</option>
+                <option value="Internship">Internship</option>
+                <option value="permanent">Permanent</option>
+            </select>
+            <label for="start">Start Time</label>
+            <input type="datetime" name="start" id="start">
+            <label for="describtion">Job Describtion</label>
+            <input type="text" name="description" id="description">
+            <label for="qualification">Appropriate Quailification</label>
+            <input type="text" name="qualification" id="Aqualification">
+            <button type="submit">Let's Get Started</button>
+    </div>
+</form>
+    <section id="aboutMe">
+        <h1>About <span>Me</span></h1>
+        <p>
+            I'm a multi-talented developer with a passion for building innovative web and mobile solutions. With a strong foundation in programming principles, I excel in creating dynamic websites and robust software applications.
+
+My expertise spans across web development technologies like PHP, MySQL, JavaScript, CSS,React and HTML, allowing me to craft scalable and efficient web applications. I'm also proficient in Java and Android development, enabling me to create innovative mobile apps for Android platforms.
+
+With a dedication to staying up-to-date with industry trends, I continuously enhance my skills to deliver cutting-edge solutions. My goal is to exceed client expectations and provide seamless user experiences.
+
+I'm committed to delivering top-notch solutions, passionate about innovation, and always up for a new challenge. Let's collaborate and build something amazing! Contact me to learn more.
+        </p>
+
+        <button> <a href="aboutMe.html">LEARN MORE...</a></button>
+        </section>
+       <div id="MyWork">
+        <h1>My Work</h1>
+        <h4>Projects</h4>
+    <section id="projects">
+        <section id="projects-items">
+            <div onclick="openPortfolio()">
+                <img src="images/Screenshot (159).png" alt="projectimage">
+        <div class="project-details">
+            <div class="skills">
+                <p>HTML <span>70.0%</span></p>
+            <hr id="portfolio-html">
+            <p>CSS <span>17.0%</span></p>
+            <hr id="portfolio-css">
+            <p>JavaScript <span>13.0%</span></p>
+            <hr id="portfolio-script">
+            </div>
+            <div id="project-about">
+                <h3>My first Portfolio</h3>
+                <p>This is my initial Portfolio that I built to showcase my skillset and projects I developed, it portrayed all my abilities at that point.
+                </p>
+            </div>
+        </div>
+        
+        <div id="project-status">
+            <p>Project Status: <span>100%</span> <br> Complete.</p>
+            
+        <hr id="portfolio-status">
+        </div>
+            </div>
+        </section>
+        <section id="projects-items">
+            <div onclick="openLocalIT()">
+                <img src="images/LOCAKit.jpg" alt="projectimage">
+        <div class="project-details">
+            <div class="skills">
+                <p>HTML <span>76.1%</span></p>
+            <hr id="localIT-html">
+            <p>CSS <span>21.9%</span></p>
+            <hr id="localIT-css">
+            <p>JavaScript <span>2.0%</span></p>
+            <hr id="localIT-script">
+            </div>
+            <div id="project-about">
+                <h3>LocalIT(FrontEnd)</h3>
+                <p>The platform developed to give local entrepreneurs a digital trading space and help grow their businesses.
+                </p>
+            </div>
+        </div>
+        
+        <div id="project-status">
+            <p>Project Status: <span>40%</span> <br>Awaiting Interprises Registration.</p>
+            
+        <hr id="localIT-status">
+        </div>
+            </div>
+        </section>
+        <section id="projects-items">
+            <div onclick="openbeautySpa()">
+                <img src="images/sign.jpg" alt="projectimage">
+        <div class="project-details">
+            <div class="skills">
+                <p>HTML <span>50.4%</span></p>
+            <hr id="beauty-html">
+            <p>CSS <span>30.9%</span></p>
+            <hr id="beauty-css">
+            <p>JavaScript <span>11.7%</span></p>
+            <hr id="beauty-script">
+            <p>PHP & MySQL <span>7.0%</span></p>
+            <hr id="beauty-PHP">
+            </div>
+            <div id="project-about">
+                <h3>Deekay Beauty Spa</h3>
+                <p>Deekay beauty spa is a small interprise that specializes in all things beauty. It is a spa and a beauty salon
+                </p>
+            </div>
+        </div>
+        
+        <div id="project-status">
+            <p>Project Status: <span>95%</span> <br>To be published.</p>
+            
+        <hr id="beauty-status">
+        </div>
+            </div>
+        </section>
+        <section id="projects-items">
+            <div onclick="openCoinSimplicity()">
+                <img src="images/LOGO.jpg" alt="projectimage" >
+            <div class="project-details">
+                <div class="skills">
+                    <p>HTML <span>31.0%</span></p>
+                <hr id="coins-html">
+                <p>CSS <span>31.9%</span></p>
+                <hr id="coins-css">
+                <p>JavaScript <span>37.1%</span></p>
+                <hr id="coins-script">
+                <p>With Aid of AI(ChatGPT) <i class="fas fa-comments"></i> <span>20%</span></p>
+                <hr id="coins-AI">
+                </div>
+                <div id="project-about">
+                    <h3>Coin Simplicity</h3>
+                    <p>I came up with an idea of web-application for Android devices that will capture coins and calculate coin value and return subTotal of all captured coins.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="project-status">
+                <p>Project Status: <span>59%</span> <br>Under Development.</p>
+                
+            <hr id="coins-status">
+            </div>
+            </div>
+        </section>
+        <section id="projects-items">
+            <img src="images/DPD.jpg" alt="projectimage" onclick="openDPD()">
+            <div class="project-details">
+                <div class="skills">
+                    <p>HTML <span>64.1%</span></p>
+                <hr id="dpd-html">
+                <p>CSS <span>32.3%</span></p>
+                <hr id="dpd-css">
+                <p>JavaScript <span>3.6%</span></p>
+                <hr id="dpd-script">
+                <p>Leveraged Google Sheets <span><i class="fas fa-file-excel"></i></span></p>
+                </div>
+                <div id="project-about">
+                    <h3>Devise Project Development</h3>
+                    <p>DPD is an architectural design and general construction company offering variety of services to help you build your dream/modern home.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="project-status">
+                <p>Project Status: <span>100%</span> <br>Completed.</p>
+                
+            <hr id="dpd-status">
+            </div>
+        </section>
+</section>
+       </div>
+
+   <section id="contact-background">
+    <form id="contact-me" action="https://formspree.io/f/xwpepbnn" method="post" >
+        <h1>Contact Me</h1>
+        <h4>Leave Me A Message</h4>
+        <div id="hrSetup">
+            <hr/>
+            <i class="fa fa-envelope"></i>
+            <hr/>
+        </div>
+        <label for="FullNames" id="FullNames" >Full Names</label>
+        <input type="text" name="full_names" id="fullnameInput" >
+        <label for="UserNumber" id="UserNumber">Mobile Number</label>
+        <input type="text" name="number" id="numberInput">
+        <label for="EmailAddress" id="EmailAddress">Email Address</label>
+        <input type="email" name="email" id="emailInput">
+        <textarea name="message" id="send--message" cols="30" rows="10" placeholder="Leave me a message for any service requests..."></textarea>
+        <button type="submit">SEND MESSAGE</button>
+    </form>
+   </section>
+
+    <div id="fullStack">
+        <h3>FullStack Websites Development</h3>
+        <h4>Website Development Technologies</h4>
+        <div id="stacks">
+            <div class="stack-langueges">
+                <div class="stack-item">
+                    <i class="fab fa-html5"></i>
+                <div><span>70%</span></div>
+                </div>
+            </div>
+            <div class="stack-langueges">
+                <div class="stack-item">
+                    <i class="fab fa-css3-alt"></i>
+                <div><span>60%</span></div>
+                </div>
+            </div>
+            <div class="stack-langueges">
+                <div class="stack-item">
+                    <i class="fab fa-js"></i>
+                <div><span>30%</span></div>
+                </div>
+            </div>
+            <div class="stack-langueges">
+                <div class="stack-item">
+                    <i class="fab fa-react"></i>
+                    <div><span>25%</span></div>
+                </div>
+            </div>
+            <div class="stack-langueges">
+                <div class="stack-item">
+                    <i class="fab fa-php"></i>
+                <div><span>30%</span></div>
+                </div>
+            </div>
+            <div class="stack-langueges">
+                <div class="stack-item">
+                    <i class="fa fa-database"></i>
+                <div><span>60%</span></div>
+                </div>
+            </div>
+        </div>
+        <p>This layout portray technologies I use to build my websites, these websites are fully functional and satisfy all the user requirements.
+        </p>
+    </div>
+    <section id="media">
+        <div id="subtittles">
+            <h1>Follow Me</h1>
+        <h4>Social Media Patforms</h4>
+        </div>
+        <div id="letsconnect">
+            <div id="inner-text">
+                <h3>Let's Connect</h3>
+            <p>
+                Connect with me! Follow me on all social media platforms for better and easier/direct interation with me.
+                Contact me for any recruitment & collaboration related matters. Also connect with me if you require any projects development.
+            </p>
+            </div>
+            <div id="socials">
+                <div id="socials-item">
+                    <a href="https://www.facebook.com/KhumaloMorenaInnocent.org/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="tel:083-618-4897" target="_blank" title="Call"><i class="fa fa-phone"></i></a>
+                </div>
+                <div id="socials-item">
+                    <a href="mailto:kminnocent6@outlook.com?subject=Portfolio text" target="_blank" title="Email"><i class="fa fa-envelope-open"></i></a>
+                <a href="https://linkedin.com/in/morena-khumalo-9866741a2" target="_blank" title="Linkedin"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div id="socials-item">
+                    <a href="https://github.com/InnocentKhumalo" target="_blank" title="Github"><i class="fab fa-github"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=+27836184897" target="_blank" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer-object">
+            <h3>Khumalo <span>Morena</span> Innocent</h3>
+     
+        <div id="copyrights">
+            <i class="fas fa-laptop-code"></i>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>About Me</title>
+</head>
+<style>
+    
+#about-header{
+    display: flex;
+    background-color: grey;
+    width: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+nav li {
+    list-style: none;
+    display: flex;
+    padding: 3px;
+    border: 0.1px solid white;
+    filter: blur(0.57px);
+    background-color: blanchedalmond;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav li:hover{
+    cursor: pointer;
+    filter: none;
+    transform: scale(1.1);
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 8px;
+}
+#About-content{
+    display: grid;
+    border: 0.1px solid black;
+    background-color: beige;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 15px;
+    text-align: center;
+}
+#About-content img{
+    width: 300px;
+    height: 250px;
+    cursor: pointer;
+    border: none; 
+    filter: drop-shadow(0 0 30px #333);
+}
+#Resume-Item{
+    width: 300px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+#Cover-letter{
+    width: 300px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+#educational-background{
+    width: 300px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+#Technologies{
+    width: 300px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+#About-content p{
+    font-weight: bolder;
+    font-family: monospace;
+}
+@media only screen and (max-width: 769px){
+    #about-header{
+    display: flex;
+    background-color: grey;
+    width: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+nav li {
+    list-style: none;
+    display: flex;
+    padding: 3px;
+    border: 0.1px solid white;
+    filter: blur(0.57px);
+    background-color: blanchedalmond;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav li:hover{
+    cursor: pointer;
+    filter: none;
+    transform: scale(1.1);
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 8px;
+}
+#About-content{
+    display: flex;
+    flex-direction: column;
+    border: 0.1px solid black;
+    background-color: beige;
+    padding: 15px;
+    text-align: center;
+}
+#About-content img{
+    width: 300px;
+    height: 250px;
+    cursor: pointer;
+    border: none; 
+    filter: drop-shadow(0 0 30px #333);
+}
+#Resume-Item{
+    width: 300px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+#Cover-letter{
+    width: 300px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+#educational-background{
+    width: 300px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+#Technologies{
+    width: 300px;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+#About-content p{
+    font-weight: bolder;
+    font-family: monospace;
+}
+}
+#collaboration{
+    background-color: aliceblue;
+    margin-bottom: 58px;
+}
+#collaboration a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+#collaboration li{
+    list-style: none;
+    color:#333;
+    cursor: pointer;
+}
+
+footer{
+    background-color: grey;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    color: white;
+}
+
+</style>
+<body>
+    <header id="about-header">
+        <nav>
+            <li>
+                <a href="index.html">Home</a></li>
+                <li><a href="index.html#MyWork">Projects</a></li>
+            <li><a href="index.html#contact-background">Contact Me</a></li>
+                <li><a href="aboutMe.html">About Me</a>
+                </li>
+        </nav>
+    </header>
+    <div id="about-page">
+        <h1>About Me: <br>
+            <span>Khumalo Morena Innocent</span></h1>
+        <p>
+            I'm a multi-talented developer with a passion for building innovative web and mobile solutions. With a strong foundation in programming principles, I excel in creating dynamic websites and robust software applications.
+
+My expertise spans across web development technologies like PHP, MySQL, JavaScript, CSS,React and HTML, allowing me to craft scalable and efficient web applications. I'm also proficient in Java and Android development, enabling me to create innovative mobile apps for Android platforms.
+
+With a dedication to staying up-to-date with industry trends, I continuously enhance my skills to deliver cutting-edge solutions. My goal is to exceed client expectations and provide seamless user experiences.
+
+I'm committed to delivering top-notch solutions, passionate about innovation, and always up for a new challenge. Let's collaborate and build something amazing! Contact me to learn more.
+        </p>
+        <div id="About-content">
+            <div id="Resume-Item">
+                <h3>My Resume</h3>
+                <img src="images/resume-thumbnail.png" alt="resume Image" onclick="openResume()">
+                <p>Click to view my resume to know more about my passion and see the contribution that I have to offer your team.
+                    Go throw and discover if my skils align with your needs you can also download it and let's take a step to new opportunities..
+                    click <span><a href="documents/Resume Of Khumalo Morena.pdf" target="_blank">here</a></span> to view my Resume.
+                </p>
+            </div>
+        <div id="Cover-letter">
+            <h3>Mobile/Desktop software Development</h3>
+            <img src="images/hero.png" alt="cover image">
+            <p>Using Java and MySQL I develop android and windows programs, with a passion for building innovative solutions I
+                effectively bridge the gab between user needs and cutting edge technology.
+            </p>
+        </div>
+        <div id="educational-background">
+            <h3>Qualifications</h3>
+            <img src="images/qualifications-760.jpg" alt="qualifications" onclick="openQualification()">
+            <p>khumalo Morena is a qualified software developer with a Diploma Dip. Systems Development, I obtained
+            my qualifications in 2023. Majoring in software development, I am a versatile developer with an educational background 
+        of programming. CLick <span><a href="documents/Transcript & Certificate.pdf">here</a></span> to view My qualifications.</p>
+        </div>
+        <div id="Technologies">
+            <h3>FullStack Web Development</h3>
+            <img src="images/full-stack-web-developer-1024x1024.jpg" alt="stack" onclick="scrollToStack()">
+            <p>I develop fully functional websites, frontend & backend I use languages and frameworks which assist me in building 
+                robust websites. using JavaScript and other technologies I develop fullstacked websites. Contact me for any project development, 
+                project collaborations and recuitment.</p>
+        </div>
+        </div>
+        <p>With a unique blend of skills, experiences, and professional passion, I am a versatile and ambitious professional poised
+            to drive success and growth  in my next endeavor. I am dedicated to delivering innovative solutions, exceeding expectations,
+            and making a meaningful impact in software development industry.Let's connect and explore how I can leverage my expertise
+            to help ypu archieve your goals.
+        </p>
+        <section id="collaboration">
+            <h2>HAVE A PROJECT IDEA?, <br>LET'S HAVE A DISCUSSION ABOUT IT.</h2>
+            <P>I am open for collaboration of any projects, contact me and team up with me.</P>
+            <h3>QUICK LINKS</h3>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="index.html#MyWork">Projects</a></li>
+            <li><a href="index.html#contact-background">Contact Me</a></li>
+            <div id="morena">
+                <h3>Khumalo Morena Innocent</h3>
+                <li><i class="fa fa-phone"></i><a href="tel:083-618-4897" target="_blank" title="Call"> +27 83 618 4897</a>/
+                    <a href="tel:063-917-7942" target="_blank" title="Call">+27 63 917 7942</a></li>
+                <li><i class="fab fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=+27836184897" target="_blank" title="Whatsapp"> +27 83 618 4897</a></li>
+                <li><i class="fa fa-envelope"></i> <a href="mailto:kminnocent6@outlook.com?subject=Portfolio Contact" target="_blank" title="Outlook">kminnocent6@outlook.com</a></li>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p> &copy; 2024 Khumalo Morena Portfolio. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function openResume() {
+    var resume = 'documents/Resume Of Khumalo Morena.pdf';
+    window.open(resume, '_blank');
+}
+function openQualification(){
+    var Qualification = 'documents/Transcript & Certificate.pdf';
+    window.open(Qualification, '_blank');
+}
+function scrollToStack(){
+    var indexPage = 'index.html#fullStack';
+    window.open(indexPage, '_self');
+}
+    </script>
+</body>
+</html>

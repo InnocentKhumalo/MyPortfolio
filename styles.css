@@ -1,0 +1,1014 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.fa-bars{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.fa-close{
+    display: none;
+    float: right;
+    color: orangered;
+        font-size: 30px;
+        margin-top: 15px;
+        margin-right: 15px;
+        cursor: pointer;
+}
+#menu{
+    display: none;
+    z-index: 1;
+    background-color: rgb(226, 226, 226, 0.9) ;
+    color: black;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    margin-top: -25px;
+}
+#menu li{
+    list-style: none;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 10px;
+    margin-top: 7px;
+    font-weight: bolder;
+    backdrop-filter: blur(10px);
+    padding: 7px;
+    cursor: pointer;
+}
+nav li{
+    display: flex;
+    float: right;
+    padding: 7px;
+    list-style: none;
+    transform: translateY(-60px);
+    cursor: pointer;
+    border-bottom: 2.5px solid #ffefe7;
+    justify-content: space-between;
+    margin-right: 7px;
+    padding-bottom: 2px;
+    border-radius: 7px 7px 0 0;;
+}
+nav li:hover{
+    background-color: #061425;
+    border-bottom: none;
+    border-top: 2.5px solid #0b459c;
+    border-left: 2.5px solid #0b459c;
+    border-right: 2.5px solid #0b459c;
+    color: white;
+}
+nav a:hover{
+    background-color: #061425;
+    border-bottom: none;
+    color: white;
+}
+main{
+    margin-top: 150px;
+}
+#intro{
+    width: 55%;
+}
+aside img{
+    float: right;
+    width: 300px;
+    height: 350px;
+    transform: translateY(-130px);
+    margin-right: 65px;
+    border-radius: 50% 50% 50% 50%;
+}
+aside img:hover{
+    border: 2.5px solid #ffefe7;
+    border-collapse: collapse;
+}
+#icons{
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+#top-icons{
+    display: flex;
+}
+#bottom-icons{
+    display: flex;
+}
+#actual-icons{
+    display: block;
+    padding: 20px;
+}
+.fa-php{
+    color: #0b459c;
+    font-size: 50px;
+}
+.fa-database{
+    color: yellow;
+    font-size: 50px;
+}
+.fa-html5{
+    color: orangered;
+    font-size: 50px;
+}
+.fa-css3-alt{
+    color: #0b459c;
+    font-size: 50px;
+}
+.fa-js{
+    color: orange;
+    font-size: 50px;
+}
+.fa-coffee{
+   color: red; 
+   font-size: 50px;
+}
+.fa-react{
+    color: #0b459c;
+    font-size: 50px;
+}
+#icons span{
+    font-weight: bold;
+}
+article{
+    border: 1.5px solid #3f1010;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 4.5px solid rgb(10, 10, 10);
+    background-color: rgb(221, 219, 219);
+    transform: translateY(-50px);
+    margin-top: -30px;
+}
+header{
+    border-bottom: 2.5px solid #3f1010;
+    border-right: 2.5px solid #3f1010;
+    border-left: 2.5px solid #3f1010;
+    border-radius: 25px;
+    background-color: grey;
+}
+article button{
+    padding: 7px;
+    text-align: center;
+    width: 140px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 40px;
+    background: linear-gradient(to right, #0b459c, #3f1010);
+    color: white;
+    cursor: pointer;
+}
+#buttons{
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+}
+
+#aboutMe{
+text-align: center;
+justify-content: center;
+border-radius: 25px;
+padding: 10px;
+margin-bottom: 25px;
+}
+
+#aboutMe h1{
+    text-align: left;
+}
+
+#aboutMe span{
+    color: #02021d;
+}
+#aboutMe p{
+    text-align: left;
+}
+#aboutMe button{
+    padding: 7px;
+    border: none;
+    color: white;
+    background: linear-gradient(40deg, #3f1010, #0b459c);
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#aboutMe h4{
+    color: #02021d;
+}
+#MyWork{
+    background-color: rgb(221, 219, 219);
+    border-radius: 15px;
+    padding: 25px;
+}
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+#projects-items{
+    flex-grow: 1;
+    flex-basis: 200;
+    height: auto;
+    width: 400px;
+    border-bottom: 1.5px solid orangered;
+    border-top: 1.5px solid orangered;
+    border-left: 1.5px solid white;
+    border-right: 1.5px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left;
+    background-color: #666464;
+    cursor: default;
+}
+#projects-items img:hover{
+    cursor: pointer;
+    overflow: hidden;
+    transform: scale(1.1);
+}
+#hrSetup{
+    display: flex;
+}
+#hrSetup hr{
+    width: 45%;
+    background-color: #CFE887;
+    height: 1.5px;
+}
+.fa-envelope{
+    font-size: 35px;
+    color: #0b459c;
+}
+#contact-me{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 2.5px solid #3f1010;
+    border-radius: 25px;
+    padding: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-content: center;
+    background-image: url(images/IMG-20240620-WA0005.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    color: white;
+}
+#contact-me input[type="text"]{
+    position: relative;
+    margin-top: 15px;
+    border: 2.5px solid #46291a;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+}
+#contact-me input[type="email"]{
+    position: relative;
+    margin-top: 15px;
+    border: 2.5px solid #46291a;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+}
+#contact-me textarea{
+    margin-top: 15px;
+    border: 2.5px solid #46291a;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+}
+textarea::placeholder{
+    color: wheat;
+    font-weight: bolder
+}
+#contact-me button{
+    padding: 7px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(to right, #82cdf7, #ff83ff);
+    margin-top: 15px;
+    overflow: hidden;
+    color: white;
+}
+
+#contact-me h1, h4{
+    text-align: center;
+}
+#contact-me h4{
+    color: #ff83ff;
+}
+#contact-me label{
+    display: inline-block;
+    transform: translateY(45px);
+    margin-left: 8px;
+    transition: 0.2s;
+    pointer-events: none;
+    z-index: 1;
+    position: relative;
+    width: fit-content;
+}
+input:focus{
+    border-top: calc(2px - (20%))solid #333;
+}
+
+#media{
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+#media h4{
+    text-align: left;
+    color: #02021d;
+
+}
+#letsconnect{
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    border-top: none;
+}
+#subtittles{
+    flex-direction: column;
+}
+#inner-text p{
+width: 50%;
+}
+#socials{
+    flex-direction: column;
+    width: 50%;
+    border-left: 1.5px solid #3f1010;
+    border-radius: 15px;
+    padding: 20px;
+}
+#socials-item{
+    padding: 10px;
+    cursor: pointer;
+}
+.fa-facebook{
+    color: blue;
+    font-size: 40px;
+    margin-right: 7px;
+}
+.fa-phone{
+    color: greenyellow;
+    font-size: 40px;
+}
+.fa-envelope-open{
+    color: cornflowerblue;
+    font-size: 40px;
+    margin-right: 7px;
+}
+.fa-linkedin{
+    color: blue;
+    font-size: 40px;
+}
+.fa-github{
+    color: black;
+    font-size: 40px;
+    margin-right: 7px;
+}
+.fa-whatsapp{
+    color: green;
+    font-size: 40px;
+}
+#footer-object{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 35px;
+    border-top: 4.5px solid #3f1010;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    background-color: #666464;
+}
+
+footer h3{
+    border-bottom: 3.6px solid saddlebrown;
+    border-radius: 25px;
+    transform: translateX(-115px);
+}
+#copyrights{
+    transform: translateY(20px);
+}
+
+.fa-laptop-code{
+    color: chartreuse;
+    font-size: 30px;
+}
+@media only screen and (max-width:769px){
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: black;
+    }
+    
+    .fa-bars{
+        color: pink;
+        display: block;
+        float: right;
+        font-size: 30px;
+        margin-top: 15px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    
+    #menu{
+        display: none;
+    }
+    
+    nav li{
+      display: none;
+    }
+    main{
+        margin-top: 70px;
+    }
+    #intro{
+        width: 100%;
+
+    }
+    aside img{
+        width: 200px;
+        height: 250px;
+        margin: 0 auto;
+        border-radius: 50% 50% 50% 50%;
+        transform: translateY(2px);
+    }
+    aside img:hover{
+        border: none;
+    }
+    #top-icons, #bottom-icons{
+        display: flex;
+        width: 100%;
+    }
+
+    #top-icons div {
+        flex: 1;
+    }
+    #bottom-icons div {
+        flex: 1;
+    }
+    #icons{
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(3, 4, 2fr);
+        gap: 8px;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #actual-icons{
+        display: block;
+    }
+    .fa-php{
+        color: #0b459c;
+        font-size: 30px;
+    }
+    .fa-database{
+        color: yellow;
+        font-size: 30px;
+    }
+    .fa-html5{
+        color: orangered;
+        font-size: 30px;
+    }
+    .fa-css3-alt{
+        color: #0b459c;
+        font-size: 30px;
+    }
+    .fa-js{
+        color: orange;
+        font-size: 30px;
+    }
+    .fa-coffee{
+       color: red; 
+       font-size: 30px;
+    }
+    .fa-react{
+        color: #0b459c;
+        font-size: 30px;
+    }
+    #icons span{
+        font-weight: bold;
+    }
+    article{
+        border: 1.5px solid #3f1010;
+        padding: 30px;
+        border-radius: 25px;
+        box-shadow: 4.5px solid whitesmoke;
+        background-color: rgb(221, 219, 219);
+        transform: translateY(-50px);
+        margin-top: 25px;
+    }
+    header{
+        border-bottom: 2.5px solid #3f1010;
+        border-right: 2.5px solid #3f1010;
+        border-left: 2.5px solid #3f1010;
+        border-radius: 25px;
+        background-color: grey;;
+    }
+    article button{
+        padding: 7px;
+        text-align: center;
+        width: 140px;
+        border: none;
+        border-radius: 25px;
+        margin-left: 40px;
+        background: linear-gradient(to right, #0b459c, #3f1010);
+        color: white;
+        cursor: pointer;
+    }
+    #buttons{
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    #aboutMe{
+    text-align: left;
+    justify-content: center;
+    border-radius: 25px;
+    margin-top: 10px;
+    padding: 10px;
+    }
+    
+    #aboutMe h1{
+        text-align: left;
+    }
+    
+    #aboutMe span{
+        color: #02021d;
+    }
+    #aboutMe p{
+        margin: 0 auto;
+    }
+    #aboutMe button{
+        padding: 7px;
+        border: none;
+        color: white;
+        background: linear-gradient(40deg, #3f1010, #0b459c);
+        border-radius: 25px;
+        cursor: pointer;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+        font-weight: bolder;
+    }
+    #aboutMe h4{
+        color: wheat;
+    }
+    #projects{
+        justify-content: center;
+    }
+    #projects-items{
+        height: auto;
+        width: auto;
+        border-bottom: 1.5px solid orangered;
+        border-top: 1.5px solid orangered;
+        border-left: 1.5px solid white;
+        border-right: 1.5px solid white;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    #hrSetup{
+        display: flex;
+    }
+    #hrSetup hr{
+        width: 45%;
+        background-color: #CFE887;
+        height: 1.5px;
+    }
+    .fa-envelope-o{
+        font-size: 35px;
+        color: #0b459c;
+    }
+    #contact-me{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        border-radius: 25px;
+        padding: 25px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        justify-content: center;
+        background-image: url(images/IMG-20240620-WA0005.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #contact-me input[type="text"]{
+        position: relative;
+        margin-top: 15px;
+        border: 2.5px solid #46291a;
+        border-radius: 7px;
+        padding: 10px;
+        background-color: transparent;
+        color: white;
+    }
+    #contact-me input[type="email"]{
+        position: relative;
+        margin-top: 15px;
+        border: 2.5px solid #46291a;
+        border-radius: 7px;
+        padding: 10px;
+        background-color: transparent;
+        color: white;
+    }
+    #contact-me textarea{
+        margin-top: 15px;
+        border: 2.5px solid #46291a;
+        border-radius: 7px;
+        padding: 10px;
+        background-color: transparent;
+        color: white;
+    }
+    textarea::placeholder{
+        color: wheat;
+        font-weight: bolder
+    }
+    #contact-me button{
+        padding: 7px;
+        border-radius: 25px;
+        border: none;
+        background: linear-gradient(to right, #82cdf7, #ff83ff);
+        margin-top: 15px;
+        overflow: hidden;
+        color: white;
+    }
+    
+    #contact-me h1, h4{
+        text-align: center;
+    }
+    #contact-me h4{
+        color: #ff83ff;
+    }
+    #contact-me label{
+        display: inline-block;
+        transform: translateY(45px);
+        margin-left: 8px;
+        transition: 0.2s;
+        pointer-events: none;
+        z-index: 1;
+        position: relative;
+        width: fit-content;
+    }
+    input:focus{
+        border-top: calc(2px - (20%))solid #333;
+    }
+    
+    #media{
+        border-radius: 15px;
+    }
+    
+    #media h4{
+        text-align: left;
+        color: #02021d;
+    
+    }
+    #letsconnect{
+        display: flex;
+        padding: 10px;
+        border-radius: 15px;
+        border-top: none;
+    }
+    #subtittles{
+        flex-direction: column;
+    }
+    #inner-text p{
+    width: 50%;
+    }
+    #socials{
+        flex-direction: column;
+        width: 50%;
+        border-left: 1.5px solid #3f1010;
+        border-radius: 15px;
+        padding: 20px;
+    }
+    #socials-item{
+        padding: 10px;
+        cursor: pointer;
+    }
+    .fa-facebook{
+        color: blue;
+        font-size: 40px;
+        margin-right: 7px;
+    }
+    .fa-phone{
+        color: green;
+        font-size: 40px;
+    }
+    .fa-envelope-open{
+        color: cornflowerblue;
+        font-size: 40px;
+        margin-right: 7px;
+    }
+    .fa-linkedin{
+        color: blue;
+        font-size: 40px;
+    }
+    .fa-github{
+        color: black;
+        font-size: 40px;
+        margin-right: 7px;
+    }
+    .fa-whatsapp{
+        color: green;
+        font-size: 40px;
+    }
+    #footer-object{
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+        border-top: 4.5px solid #3f1010;
+        bottom: 0;
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    footer h3{
+        border-bottom: 3.6px solid saddlebrown;
+        border-radius: 25px;
+        width: fit-content;
+        margin: 0 auto;
+        justify-content: center;
+        text-align: center;
+        transform: translateX(1px);
+    }
+    
+    .fa-laptop-code{
+        color: chartreuse;
+        font-size: 30px;
+        transform: translateY(-20px);
+    }
+    #fullStack{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid #3f1010;
+        border-radius: 15px;
+        margin: 0 auto;
+        padding: 5px;
+        background-color: rgb(221, 219, 219);
+        margin-bottom: 20px;
+    }
+    #fullStack h3{
+        text-align: center;
+    }
+    #fullStack h4{
+        text-align: left;
+    }
+    #stacks{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+        text-align: center;
+        justify-content: space-evenly;
+        width: auto;
+        padding: 20px;
+    }
+    .stack-langueges{
+        display: block;
+        width: 100%;
+        justify-content: space-evenly;
+        text-align: center;
+        border-radius: 50%;
+        border: 4.5px solid #1e1a46;
+    }
+    .stack-item{
+        border-radius: 50%;
+        border: 8px solid #0b459c;
+        font-weight: bolder;
+    }
+    #fullStack p{
+        font-weight: bolder;
+        text-align: center;
+    }
+}
+#projects-items img{
+margin: 0 auto;
+width: 100%;
+height: 200px;
+}
+.project-details{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.skills{
+    width: 50%;
+}
+#project-about{
+    width: 50%;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.skills hr {
+    margin-top: 25px;
+    height: 2.5px;
+    border-radius: 15px;
+}
+#projects-items span{
+    float: right;
+}
+#project-status{
+    padding: 20px;
+}
+#localIT-status{
+    background-image: linear-gradient(to right, orangered 40%, whitesmoke 40%);
+    height: 2.5px;
+}
+#localIT-html{
+    background-image: linear-gradient(to right, orangered 76.1%, whitesmoke 76.1%);
+}
+#localIT-css{
+    background-image: linear-gradient(to right, orangered 21.9%, whitesmoke 21.9%);
+}
+#localIT-script{
+    background-image: linear-gradient(to right, orangered 2.0%, whitesmoke 2.0%);
+}
+
+#portfolio-status{
+    background-color: orangered;
+    height: 2.5px;
+}
+#portfolio-html{
+    background-image: linear-gradient(to right, orangered 70.0%, whitesmoke 70.0%);
+}
+#portfolio-css{
+    background-image: linear-gradient(to right, orangered 17.0%, whitesmoke 17.0%);
+}
+#portfolio-script{
+    background-image: linear-gradient(to right, orangered 13.0%, whitesmoke 13.0%);
+}
+
+#beauty-status{
+    background-image: linear-gradient(to right, orangered 95%, whitesmoke 95% );
+    height: 2.5px;
+}
+#beauty-html{
+    background-image: linear-gradient(to right, orangered 50.4%, whitesmoke 50.4%);
+}
+#beauty-css{
+    background-image: linear-gradient(to right, orangered 30.9%, whitesmoke 30.9%);
+}
+#beauty-script{
+    background-image: linear-gradient(to right, orangered 11.7%, whitesmoke 11.7%);
+}
+#beauty-PHP{
+    background-image: linear-gradient(to right, orangered 7.0%, whitesmoke 7.0%);
+}
+
+#coins-status{
+    background-image: linear-gradient(to right, orangered 59%, whitesmoke 59% );
+    height: 2.5px;
+}
+#coins-html{
+    background-image: linear-gradient(to right, orangered 31.0%, whitesmoke 31.0%);
+}
+#coins-css{
+    background-image: linear-gradient(to right, orangered 31.9%, whitesmoke 31.9%);
+}
+#coins-script{
+    background-image: linear-gradient(to right, orangered 37.1%, whitesmoke 37.1%);
+}
+#coins-AI{
+    background-image: linear-gradient(to right, orangered 20%, whitesmoke 20%);
+}
+
+#dpd-status{
+    background-color: orangered;
+    height: 2.5px;
+}
+#dpd-html{
+    background-image: linear-gradient(to right, orangered 64.1%, whitesmoke 64.1%);
+}
+#dpd-css{
+    background-image: linear-gradient(to right, orangered 32.3%, whitesmoke 32.3%);
+}
+#dpd-script{
+    background-image: linear-gradient(to right, orangered 36.6%, whitesmoke 3.6%);
+}
+
+.fa-file-excel{
+    font-size: 30px;
+    color: green;
+}
+#fullStack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid #3f1010;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: rgb(221, 219, 219);
+    margin-bottom: 20px;
+}
+#fullStack h3{
+    text-align: center;
+}
+#fullStack h4{
+    text-align: left;
+}
+#stacks{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    text-align: center;
+    justify-content: space-evenly;
+    width: auto;
+    padding: 20px;
+}
+.stack-langueges{
+    display: block;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    border-radius: 50px 50px 50px 50px;
+    border: 4.5px solid #1e1a46;
+}
+.stack-item{
+    border-radius: 50px 50px 50px 50px;
+    border: 8px solid #0b459c;
+    font-weight: bolder;
+}
+#fullStack p{
+    font-weight: bolder;
+    text-align: center;
+}
+.active{
+    transform: translateY(-45px);
+}
+#recruitment-popup{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: 1px solid black;
+    filter: drop-shadow(0  0 35px #333);
+    padding: 7px;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+#recruitment-form{
+    justify-content: center;
+    align-items: center;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#recruitment-popup label{
+    margin-bottom: 7px;
+    font-weight: bolder;
+}
+#recruitment-popup button{
+    margin-top: 7px;
+    padding: 8px;
+font-weight: bolder;
+background-color: #061425;
+color: white;
+border: none;
+border-radius: 10px;
+}
+
+#names-section input{
+    font-size: 20px;
+    width: 49%;
+}
+#recruitment-popup input{
+    font-size: 20px;
+border-radius: 5px;
+padding: 2px;
+}
+.fa-times{
+    color: red;
+    text-align: right;
+    padding: 7px;
+    margin-top: 8px;
+    margin-right: 8px;
+}
+.fa-times:hover{
+    cursor: pointer;
+}
+#recruitment-form button:hover{
+    cursor: pointer;
+    background-color: greenyellow;
+}
