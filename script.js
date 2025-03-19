@@ -46,7 +46,7 @@ function closeMenu() {
 }
 
 function openResume() {
-    var resume = 'documents/Resume Of Khumalo Morena.pdf';
+    var resume = 'documents/Resume of Mr Khumalo.pdf';
     window.open(resume, '_blank');
 }
 
