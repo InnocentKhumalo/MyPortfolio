@@ -46,7 +46,7 @@ function closeMenu() {
 }
 
 function openResume() {
-    var resume = 'documents/Resume of Mr Khumalo.pdf';
+    var resume = 'documents/Mr Khumalo Morena Innocent.PDF';
     window.open(resume, '_blank');
 }
 
