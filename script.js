@@ -64,7 +64,7 @@ function openCoinSimplicity() {
     window.open("https://innocentkhumalo.github.io/CoinSimplicity/", "_blank");
 }
 function openDPD() {
-    window.open("https://deviseprojectdevelopment.co.za", "_blank");
+    window.open("https://innocentkhumalo.github.io/DeviseProjectDevelopment", "_blank");
 }
 
 function closeRecruitment() {
